@@ -316,8 +316,5 @@ def serve_image(filename):
     return send_from_directory(IMAGE_FOLDER, filename)
 
 if __name__ == "__main__":
-    os.makedirs(IMAGE_FOLDER, exist_ok=True)
-    print("\n Portfolio server starting...")
-    print(f" Images folder: {IMAGE_FOLDER}")
-    print(" Open: http://localhost:5000\n")
-    app.run(debug=True, port=5000)
+    app.run()
+
